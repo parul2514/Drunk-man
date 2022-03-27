@@ -2,6 +2,7 @@
 #include<cmath>
 #include<cstdlib>
 #include<ctime>
+#include<string>
 using namespace std;
 int main (){
   srand(time(0));
@@ -20,7 +21,7 @@ int main (){
     position = position + move; 
     if (position <1) {cout << "You could not finish the race!" <<endl; break;}
     if (position >size-1) {cout << "Yay! You finished the race" << endl; break;}
-    for(int sleep=0; sleep< 1000000 ; ++ sleep);
   }   
   return 0; 
+  getchar();
 }
